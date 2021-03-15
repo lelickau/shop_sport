@@ -1,0 +1,57 @@
+body {
+    box-sizing: border-box;
+    font-family: 'PT Serif', serif;
+    font-size: 18px;
+    font-weight: 400;
+}
+.container {
+    max-width: 1360px;
+    margin: 0 auto;
+}
+.header {
+    background: linear-gradient(to right, #6180e0 40%, #fff 40%);
+    &__box {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 90px;
+    }
+    &__menu {
+        display: flex;
+        align-items: center;
+        width: 50%;
+        height: 100%;
+        background-color: #6180e0;
+    }
+
+    &__brends {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50%;
+        height: 100%;
+        background-color: #fff;
+    }
+}
+.logo {
+    margin-right: 63px;
+}
+
+.menu {
+    &__list {
+        display: flex;
+    }
+    &__item + &__item {
+        margin-left: 30px;
+    }
+    &__link {
+        font-weight: 700;
+        color: #fff;
+    }
+}
+.brend {
+    max-height: 37px;
+}
+.brend + .brend {
+    margin-left: 65px;
+}
